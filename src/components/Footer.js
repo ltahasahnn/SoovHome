@@ -1,26 +1,64 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid';
+import { useDispatch, useSelector } from 'react-redux';
+import { headers, ca, falsee } from '../store/reducers/exampleReducer';
+import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 const whatsappNumber = '905376919796';
 const Footer = () => {
+  const userManagamentSlice = createSlice({
+    name: "userManagament",
+  });
+  const store = configureStore({
+    reducer: userManagamentSlice.reducer,
+  });
+  const { footer } = useSelector((state) => state.userManagament);
+  const dispatch = useDispatch();
   return (
     <div id="footer" className='bg-[#333333] mt-20 py-10 leading-8 w-full flex flex-col h-full min-h-[250px] max-lg:px-16 p-4'>
       <div className="container m-auto text-white grid grid-cols-5 max-lg:grid-cols-2 gap-8">
-        <div className="food-logo max-lg:col-span-2 max-lg:m-auto max-md:col-span-2 max-lg:max-w-[250px]">
+        <Link to="/"
+          onClick={() => {
+            dispatch(headers(0))
+            dispatch(falsee())
+          }}
+          className="food-logo max-lg:col-span-2 max-lg:m-auto max-md:col-span-2 max-lg:max-w-[250px]">
           <img src="assets/images/soovlogo.png" className='w-full' alt="" />
-        </div>
+        </Link>
         <ul className='w-fit max-md:col-span-2'>
           <li className='gold font-bold text-xl mb-2'>URUNLERIMIZ</li>
-          <a href='/home#bestofsales' className='h-fit'><li className='font-medium w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>En Çok Satanlar</li></a>
-          <a href='/home#models' className='w-fit'><li className='font-medium w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Modeller</li></a>
+          <Link to='/'
+            onClick={() => { dispatch(ca(1)) }}
+            className='h-fit'>
+            <li className='font-medium w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>
+              En Çok Satanlar
+            </li>
+          </Link>
+          <Link
+            to='/'
+            onClick={() => { dispatch(ca(2)) }}
+            className='w-fit'
+          >
+            <li className='font-medium w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>
+              Modeller
+            </li>
+          </Link>
         </ul>
         <ul className='w-fit max-lg:w-full max-md:items-start max-md:col-span-2 max-lg:flex max-lg:flex-col max-lg:items-end'>
           <li className='gold font-bold text-xl mb-2'>HAKKIMIZDA</li>
-          <Link to='/aboutus' className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Hakkında</li></Link>
-          <Link to='/aboutus' className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Vizyon</li></Link>
-          <Link to='/aboutus' className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Ürünlerimiz</li></Link>
-          <Link to='/aboutus' className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Müşteri Hizmetleri</li></Link>
+          <Link to='/hakkimizda' className='w-fit'
+            onClick={() => { dispatch(ca(0)) }}
+          ><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Hakkında</li></Link>
+          <Link to='/hakkimizda'
+            onClick={() => { dispatch(ca(1)) }}
+            className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Vizyon</li></Link>
+          <Link to='/hakkimizda'
+            onClick={() => { dispatch(ca(2)) }}
+            className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Ürünlerimiz</li></Link>
+          <Link to='/hakkimizda'
+            onClick={() => { dispatch(ca(3)) }}
+            className='w-fit'><li className='font-medium cursor-pointer w-fit relative hover:left-2 hover:list-disc hover:text-[#FFB000] left-0 ts text-md'>Müşteri Hizmetleri</li></Link>
         </ul>
         <div className="flex lg:flex-col max-lg:col-span-2 max-lg:grid-cols-2 max-lg:grid">
           <div className="flex max-md:col-span-2 font-medium max-lg:w-full text-sm tracking-wide flex-col">
@@ -50,7 +88,13 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.8393286511146!2d29.517273199999998!3d40.078995899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cbc9f907c9b94b%3A0x1f322b18124aae28!2sSOOV%20Home!5e0!3m2!1str!2str!4v1696367506889!5m2!1str!2str" className='w-full max-lg:col-span-2 max-h-[150px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.8393286511146!2d29.517273199999998!3d40.078995899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cbc9f907c9b94b%3A0x1f322b18124aae28!2sSOOV%20Home!5e0!3m2!1str!2str!4v1696367506889!5m2!1str!2str"
+          className='w-full max-lg:col-span-2 max-h-[150px]'
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+
       </div>
       <div className="container border-t border-[#f2f2f2] border-opacity-40 mt-4 text-opacity-40 py-4 m-auto w-full text-stone-200">
         <span className='w-full p-2 max-sm:text-xs'>

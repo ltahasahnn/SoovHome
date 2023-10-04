@@ -49,6 +49,13 @@ font-family: 'Montserrat', sans-serif;
   position: relative;
   transition: .2s;
   padding: .5rem 0;
+  cursor: pointer;
+}
+.navigation-item:hover >svg{
+  transform: rotate(90deg);
+}
+.rotate.active{
+  transform: rotate(90deg);
 }
 
 .navigation-item::before{
@@ -169,8 +176,8 @@ font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   text-shadow: 0 0 1.5px #fff;
   left: 0;
-  bottom: -85px;
-  height: 85px;
+  bottom: -65px;
+  height: 65px;
   width: 100%;
   background-color: #353535;
   transition: .3s;
@@ -187,18 +194,48 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-/* heart */
-.heart{
+.articleMobil{
+  position: absolute;
+  display: flex;
+  padding: 1rem;
+  letter-spacing: 1px;
+  font-weight: medium;
+  font-size: 1.2rem;
+  text-shadow: 0 0 1.5px #fff;
+  left: 0;
+  bottom:0;
+  height: 60px;
+  width: 100%;
+  background-color: #353535;
   transition: .3s;
-  top: -100px;
-  right: -100px;
+  color: #fff;
 }
-.wrapper:hover .heart{
-  top: 1rem;
-  right: 1rem;
+.articleMobil:hover{
+  background-color: #FFB000;
 }
 
 
+.infoMobil{
+  padding: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: medium;
+  font-size: 1.2rem;
+  text-shadow: 0 0 1.5px #fff;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: hsla(0, 0%, 22%, 0.885);
+  transition: .3s;
+}
+.infoMobil:hover{
+  background-color: #ffae00;
+}
 .info{
   padding: 1rem;
   position: absolute;
@@ -211,8 +248,8 @@ font-family: 'Montserrat', sans-serif;
   text-shadow: 0 0 1.5px #fff;
   color: #fff;
   left: 0;
-  bottom: -85px;
-  height: 85px;
+  bottom: -65px;
+  height: 65px;
   width: 100%;
   background-color: hsla(0, 0%, 22%, 0.815);
   transition: .3s;
@@ -226,41 +263,6 @@ font-family: 'Montserrat', sans-serif;
   /* background-color: hsla(41, 100%, 50%, 0.815) */
   background-color: #ffae00
 }
-
-.circle{
-  position: relative;
-  width: 75px;
-  height: 75px;
-  border-right: solid;
-  border-width: 0 2px 0 0;
-  border-color: #FFB000;
-  border-radius: 50%;
-}
-.circle:before{
-  position: absolute;
-  content: "";
-  left: 50%;
-  transform: translate(0%,-50%);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #FFB000;
-  transition: .5s;
-}
-.animate{
-  transform: .2s;
-  transform: rotateZ(0);
-  animation: animation infinite 500ms;
-}
-@keyframes animation{
-  0%{
-    transform: rotateZ(0);
-  }
-  100%{
-    transform: rotateZ(-360deg);
-  }
-}
-
 
 .instagram{
   transition: .2s;
@@ -308,8 +310,47 @@ font-family: 'Montserrat', sans-serif;
 }
 .grad{
   /* background-image: linear-gradient(to top,#0F2027,#203A43,#2C5364); */
-  background: #c1c1c1;
+  background-color: #f2f2f2;
 }
 .z-99{
   z-index: 999;
+}
+
+.arrow{
+  position: absolute;
+  transform: translate(0,-50%);
+  top: 50%;
+  color: #fff;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  padding: .5rem;
+}
+.arrow:hover{
+  background-color: #0a0a0a;
+}
+.arrow-right{
+  right: -75px;
+}
+.arrow-left{
+  left: -75px;
+}
+
+
+.menuBarWrapper{
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  margin-top: 24px;
+  width: 200px;
+  text-align: start;
+  transition: .3s;
+}
+.menuBarWrapper li{
+  transition: .3s;
+}
+.menuBarWrapper li{
+  padding: .5rem;
+}
+.menuBarWrapper li:hover{
+  color: #ffae00;
 }

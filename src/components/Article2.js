@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HeartIcon } from '@heroicons/react/24/outline'
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
-import { ImagePop, count, countState, state } from '../store/reducers/exampleReducer';
+import { ImagePop, count, countState, b, headers, state } from '../store/reducers/exampleReducer';
 import { Link } from 'react-router-dom';
 
 const Article2 = () => {
@@ -15,12 +15,11 @@ const Article2 = () => {
     reducer: userManagamentSlice.reducer,
   });
   const dispatch = useDispatch();
-
   const { dortmund, han, countt, gloria } = useSelector((state) => state.userManagament);
   return (
     <div className="">
       <article
-        id='models'
+        id='dortmund'
         className='container max-lg:px-10 max-xl:px-6 gold max-md:flex max-md:flex-col relative text-2xl max-w-[1100px] m-auto w-full'
       >
         <h2 className='text-start max-lg:text-4xl max-lg:text-center text-4xl font-bold my-4 text-[#353535] max-md:text-2xl text-opacity-75 pt-4'>Dortmund - Koltuk Takımı</h2>
@@ -39,6 +38,7 @@ const Article2 = () => {
                 dispatch(count(1))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(0))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -49,10 +49,14 @@ const Article2 = () => {
                   dispatch(ImagePop())
                   dispatch(count(1))
                   dispatch(countState("dort"))
+                  dispatch(b(1))
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -68,6 +72,7 @@ const Article2 = () => {
                 dispatch(count(9))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(3))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -81,7 +86,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -97,6 +105,7 @@ const Article2 = () => {
                 dispatch(count(10))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(6))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -110,7 +119,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -128,6 +140,7 @@ const Article2 = () => {
                 dispatch(count(13))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(1))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -141,7 +154,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -157,6 +173,7 @@ const Article2 = () => {
                 dispatch(count(6))
                 dispatch(countState("dort"))
                 dispatch(state("dort/ber"))
+                dispatch(b(4))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -170,7 +187,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -186,6 +206,7 @@ const Article2 = () => {
                 dispatch(count(8))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(7))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -199,7 +220,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -217,6 +241,7 @@ const Article2 = () => {
                 dispatch(count(21))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(2))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -230,7 +255,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -246,6 +274,7 @@ const Article2 = () => {
                 dispatch(count(12))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(5))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -259,7 +288,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -275,6 +307,7 @@ const Article2 = () => {
                 dispatch(count(15))
                 dispatch(countState("dort"))
                 dispatch(state("dort/normal"))
+                dispatch(b(8))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -288,7 +321,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -296,7 +332,7 @@ const Article2 = () => {
         </div>
       </article>
       <article
-        id='models'
+        id='wood'
         className='container max-lg:px-10 max-xl:px-6 gold max-md:flex max-md:flex-col relative text-2xl max-w-[1100px] m-auto w-full'
       >
         <h2 className='text-start max-lg:text-4xl max-lg:text-center text-4xl font-bold my-4 pt-4 text-opacity-75 max-md:text-2xl text-[#353535]'>Wood - Ahşap Koltuk Takımı</h2>
@@ -315,6 +351,7 @@ const Article2 = () => {
                 dispatch(count(16))
                 dispatch(countState("han"))
                 dispatch(state("han/ber"))
+                dispatch(b(0))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -328,7 +365,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -344,6 +384,7 @@ const Article2 = () => {
                 dispatch(count(8))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(3))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -357,7 +398,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -373,6 +417,7 @@ const Article2 = () => {
                 dispatch(count(2))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(6))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -386,7 +431,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -404,6 +452,7 @@ const Article2 = () => {
                 dispatch(count(13))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(1))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -417,7 +466,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -433,6 +485,7 @@ const Article2 = () => {
                 dispatch(count(15))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(4))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -446,7 +499,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -462,6 +518,7 @@ const Article2 = () => {
                 dispatch(count(12))
                 dispatch(countState("han"))
                 dispatch(state("han/ber"))
+                dispatch(b(7))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -475,7 +532,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -493,6 +553,7 @@ const Article2 = () => {
                 dispatch(count(9))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(2))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -506,7 +567,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -522,6 +586,7 @@ const Article2 = () => {
                 dispatch(count(10))
                 dispatch(countState("han"))
                 dispatch(state("han/ber"))
+                dispatch(b(5))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -535,7 +600,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -551,6 +619,7 @@ const Article2 = () => {
                 dispatch(count(5))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
+                dispatch(b(8))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -564,7 +633,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -572,7 +644,7 @@ const Article2 = () => {
         </div>
       </article>
       <article
-        id='models'
+        id='gloria'
         className='container max-lg:px-10 max-xl:px-6 gold max-md:flex max-md:flex-col relative text-2xl max-w-[1100px] m-auto w-full'
       >
         <h2 className='text-start max-lg:text-4xl max-lg:text-center text-4xl font-bold my-4 pt-4 text-opacity-75 max-md:text-2xl text-[#353535]'>Gloria - Koltuk Takımı</h2>
@@ -591,6 +663,7 @@ const Article2 = () => {
                 dispatch(count(1))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(0))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -604,7 +677,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -620,6 +696,7 @@ const Article2 = () => {
                 dispatch(count(3))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(3))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -633,7 +710,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -649,6 +729,7 @@ const Article2 = () => {
                 dispatch(count(5))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(6))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -662,7 +743,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -680,6 +764,7 @@ const Article2 = () => {
                 dispatch(count(7))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(1))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -693,7 +778,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -709,6 +797,7 @@ const Article2 = () => {
                 dispatch(count(10))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(4))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -722,7 +811,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -738,6 +830,7 @@ const Article2 = () => {
                 dispatch(count(11))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/ber"))
+                dispatch(b(7))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -751,7 +844,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -769,6 +865,7 @@ const Article2 = () => {
                 dispatch(count(12))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/ber"))
+                dispatch(b(2))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -782,7 +879,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -798,6 +898,7 @@ const Article2 = () => {
                 dispatch(count(8))
                 dispatch(countState("gloria"))
                 dispatch(state("glo/normal"))
+                dispatch(b(5))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -811,7 +912,10 @@ const Article2 = () => {
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>
@@ -837,10 +941,14 @@ const Article2 = () => {
                   dispatch(ImagePop())
                   dispatch(count(0))
                   dispatch(countState("gloria"))
+                  dispatch(b(8))
                 }}
                 className='w-full h-full scale-105 hover:scale-100 object-cover'
               />
-              <Link to='/article' className="absolute info">
+              <Link to="/urun-detay" className="absolute max-md:hidden info">
+                <span>URUNU INCELE</span>
+              </Link>
+              <Link to="/urun-detay" className="absolute md:hidden infoMobil">
                 <span>URUNU INCELE</span>
               </Link>
             </motion.div>

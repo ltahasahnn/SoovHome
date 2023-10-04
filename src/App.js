@@ -9,19 +9,17 @@ import Article3 from './components/Article3'
 import All from './components/All'
 import AboutUs from './components/AboutUs.js'
 import Models from './components/Models.js'
-import Load from './components/Load.js'
 import ContactUs from './components/ContactUs.js'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Load />} />
-        <Route path="/home" element={<All />} />
-        <Route path="/article" element={<Article3 />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/models" element={<Models />} />
+        <Route path="/" element={<All />} />
+        <Route path="/urun-detay" element={<Article3 />} />
+        <Route path="/hakkimizda" element={<AboutUs />} />
+        <Route path="/iletisim" element={<ContactUs />} />
+        {/* <Route path="/models" element={<Models />} /> */}
       </Routes>
 
     </BrowserRouter>

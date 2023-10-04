@@ -6,11 +6,6 @@ import Article2 from '../components/Article2'
 import Footer from '../components/Footer'
 import { BrowserRouter, Router, Routes } from 'react-router-dom'
 const Models = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      window.location.href = "#models"
-    }, 1000);
-  }, [])
 
   return (
     <div className='bg-stone-100'>

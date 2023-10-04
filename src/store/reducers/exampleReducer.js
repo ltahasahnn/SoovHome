@@ -94,9 +94,17 @@ const initialState = {
   ],
   countt: 0,
   header: 0,
-  countState: null,
-  states: null,
+  countState: "dort",
+  states: "dort/normal",
   imagePop: false,
+  gloriacount: [1, 7, 12, 3, 10, 8, 5, 11, 0],
+  dortcount: [1, 13, 21, 9, 6, 12, 10, 8, 15],
+  woodcount: [16, 13, 9, 8, 15, 10, 2, 12, 5],
+  a: 0,
+  about: 0,
+  modelWrapper: false,
+  menu: false,
+  footer: 0,
 }
 const userManagament = createSlice({
   name: "userManagament",
@@ -108,8 +116,32 @@ const userManagament = createSlice({
     state: (state, action) => {
       state.states = action.payload
     },
+    menuBar: (state, action) => {
+      state.menu = !state.menu
+    },
     countState: (state, action) => {
       state.countState = action.payload
+    },
+    b: (state, action) => {
+      state.a = action.payload
+    },
+    wrapper: (state, action) => {
+      state.modelWrapper = !state.modelWrapper
+    },
+    ca: (state, action) => {
+      state.footer = action.payload
+    },
+    plus: (state, action) => {
+      if (state.a < 8 || state == 0)
+        state.a += +1
+    },
+    minus: (state, action) => {
+      if (state.a > 0)
+        state.a += -1
+    },
+    falsee: (state, action) => {
+      state.modelWrapper = false
+      state.menu = false
     },
     headers: (state, action) => {
       state.header = action.payload
@@ -120,5 +152,5 @@ const userManagament = createSlice({
   }
 })
 
-export const { count, state, ImagePop, countState, headers } = userManagament.actions;
+export const { count, state, plus, menuBar, falsee, wrapper, minus, b, ca, ImagePop, countState, headers } = userManagament.actions;
 export default userManagament.reducer

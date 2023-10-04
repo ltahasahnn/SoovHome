@@ -4,6 +4,7 @@ import Image1 from '../assets/images/DORTMUND PART 2/DORTMUND KOLTUK TAKIMI/I
 import { useDispatch, useSelector } from 'react-redux'
 import { count, countState, state } from '../store/reducers/exampleReducer'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const HeaderContent = () => {
   const dispatch = useDispatch();
@@ -33,9 +34,35 @@ const HeaderContent = () => {
 
   const { media, countt } = useSelector((state) => state.userManagament);
 
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - e.target.offsetLeft);
+    setScrollLeft(e.target.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const x = e.pageX - e.target.offsetLeft;
+    const walk = (x - startX) * 3; // Ayarlayabilirsiniz
+    e.target.scrollLeft = scrollLeft - walk;
+  };
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
   return (
-    <div className='w-full select-none relative  max-lg:min-h-[60vh] max-sm:min-h-[10vh] max-md:min-h-[42vh] min-h-[80vh] max-lg:mt-10 lg:my-4 max-sm:p-2 lg:p-10'>
-      <div className="lg:container relative text-black m-auto flex items-center justify-center">
+    <div className='w-full select-none relative  max-lg:min-h-[60vh] max-sm:min-h-[10vh] max-md:min-h-[42vh] min-h-[80vh] max-lg:mt-10 lg:my-4 max-sm:p-2 lg:p-10'
+      onMouseMove={handleMouseMove}
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="lg:container relative text-black m-auto flex items-center justify-center">
         <ChevronLeftIcon className='h-24 z-50 md:mr-10 hover:text-[#FFB000] text-[#FFCC70] ts cursor-pointer'
           onClick={prevImage}
         />
@@ -55,7 +82,7 @@ const HeaderContent = () => {
             />
           </div>
           <Link
-            to="/article"
+            to="/urun-detay"
             className='z-50 min-w-[90%] max-md:max-w-[100%] max-md:min-w-[100%] max-w-[90%]'
           >
             <img
@@ -66,7 +93,7 @@ const HeaderContent = () => {
                 dispatch(state("dort/normal"))
               }}
               draggable="false"
-              className='object-cover ts shadow rounded min-w-[100%] max-lg:min-h-[45vh] max-lg:max-h-[45vh] max-h-[70vh]'
+              className='object-cover ts shadow rounded min-w-[100%] max-md:max-h-[30vh] max-md:min-h-[30vh] max-lg:min-h-[45vh] max-lg:max-h-[45vh] max-h-[70vh]'
               alt=""
             />
           </Link>
@@ -79,7 +106,7 @@ const HeaderContent = () => {
           <div className={`dot ${currentImageIndex === 1 ? 'active' : ''}`}></div>
           <div className={`dot ${currentImageIndex === 2 ? 'active' : ''}`}></div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
