@@ -31,26 +31,27 @@ const Article3 = () => {
   return (
     <div id='urun'>
       <Header />
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01]
-        }}
+      <div
         className="w-full min-h-[90vh] max-xl:max-h-[70vh] max-lg:min-h-fit max-lg:max-h-fit max-h-[90vh] flex items-center h-full bg-[#f2f2f2] p-4">
         <div className="m-auto container grid grid-cols-2 bg-stone-200 grid h-full h-fit p-8">
-          <div className={`flex max-md:max-h-[30vh] h-[70vh] max-lg:col-span-2`}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className={`flex max-md:max-h-[30vh] h-[70vh] max-lg:col-span-2`}>
             {countState === 'dort' && <img src={dortmund[countt].id} className={`h-full w-full object-cover`} alt="" />}
             {countState === 'afi' && <img src={afilli[countt].id} className={`h-full w-full object-cover`} alt="" />}
             {countState === 'media' && <img src={media[countt].id} className={`h-full w-full object-cover`} alt="" />}
             {countState === 'gloria' && <img src={gloria[countt].id} className={`h-full w-full object-cover`} alt="" />}
             {countState === 'han' && <img src={han[countt].id} className={`h-full w-full object-cover`} alt="" />}
-          </div>
+          </motion.div>
           {countState === "dort" && <div className="w-full h-full max-lg:col-span-2 flex flex-col justify-between max-md:p-6 max-md:px-2 max-md:border-b max-md:border-[#000] max-md:border-opacity-10 px-10 overflow-hidden">
             {states === 'han/normal' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Wood Koltuk Takımı</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Wood - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Wood Koltuk Takımı, ismini taşıdığı ahşap dokusuyla evinize doğal bir zarafet getiriyor. Ahşabın sıcak tonları, modern tasarımıyla buluşarak zamanın ötesinde bir estetik sunuyor. Siyah ve krem renklerle bütünleşen ahşap detaylar, odanıza sıcaklık ve karakter katıyor.</p>
               <p className='mt-4 text-sm'>
                 SoovHome'un Wood Koltuk Takımı, sadece göz zevkinizi değil, aynı zamanda vücudunuzun ihtiyaçlarını da düşünerek tasarlandı. Derin oturma alanları ve ergonomik form, uzun süreli oturmalarda bile üst düzey konfor sağlıyor. Rahatlığı hissetmek için tek bir dokunuş yeterli.
@@ -66,7 +67,7 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund Koltuk Takımı</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Dortmund koltuk takımımızın siyah renkleri, odanıza sofistike bir hava katarken, aynı zamanda sade ve şık bir görünüm sunuyor. Siyahın zarafeti, modern tasarımıyla buluşarak evinize benzersiz bir stil katıyor.</p>
               <p className='mt-4 text-sm'>
                 Soovhome olarak, tasarımımızda estetiği sadece göz önüne almakla kalmayıp aynı zamanda rahatlık ve ergonomiye de önem veriyoruz. Dortmund koltuk takımı, yüksek kaliteli malzemelerle tasarlanmış olup, uzun süreli oturmalarda bile maksimum konforu sağlamak üzere özel olarak üretilmiştir.
@@ -94,7 +95,7 @@ const Article3 = () => {
           </div>}
           {countState === 'han' && <div className="w-full h-full max-lg:col-span-2 flex flex-col justify-between max-md:p-6 max-md:px-2 max-md:border-b max-md:border-[#000] max-md:border-opacity-10 px-10 overflow-hidden">
             {states === 'han/normal' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Wood</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Wood - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Wood Koltuk Takımı, ismini taşıdığı ahşap dokusuyla evinize doğal bir zarafet getiriyor. Ahşabın sıcak tonları, modern tasarımıyla buluşarak zamanın ötesinde bir estetik sunuyor. Siyah ve krem renklerle bütünleşen ahşap detaylar, odanıza sıcaklık ve karakter katıyor.</p>
               <p className='mt-4 text-sm'>
                 SoovHome'un Wood Koltuk Takımı, sadece göz zevkinizi değil, aynı zamanda vücudunuzun ihtiyaçlarını da düşünerek tasarlandı. Derin oturma alanları ve ergonomik form, uzun süreli oturmalarda bile üst düzey konfor sağlıyor. Rahatlığı hissetmek için tek bir dokunuş yeterli.
@@ -110,7 +111,7 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Dortmund koltuk takımımızın siyah renkleri, odanıza sofistike bir hava katarken, aynı zamanda sade ve şık bir görünüm sunuyor. Siyahın zarafeti, modern tasarımıyla buluşarak evinize benzersiz bir stil katıyor.</p>
               <p className='mt-4 text-sm'>
                 Soovhome olarak, tasarımımızda estetiği sadece göz önüne almakla kalmayıp aynı zamanda rahatlık ve ergonomiye de önem veriyoruz. Dortmund koltuk takımı, yüksek kaliteli malzemelerle tasarlanmış olup, uzun süreli oturmalarda bile maksimum konforu sağlamak üzere özel olarak üretilmiştir.
@@ -138,7 +139,7 @@ const Article3 = () => {
           </div>}
           {countState === 'media' && <div className="w-full h-full max-lg:col-span-2 flex flex-col justify-between max-md:p-6 max-md:px-2 max-md:border-b max-md:border-[#000] max-md:border-opacity-10 px-10 overflow-hidden">
             {states === 'han/normal' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Wood</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Wood - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Wood Koltuk Takımı, ismini taşıdığı ahşap dokusuyla evinize doğal bir zarafet getiriyor. Ahşabın sıcak tonları, modern tasarımıyla buluşarak zamanın ötesinde bir estetik sunuyor. Siyah ve krem renklerle bütünleşen ahşap detaylar, odanıza sıcaklık ve karakter katıyor.</p>
               <p className='mt-4 text-sm'>
                 SoovHome'un Wood Koltuk Takımı, sadece göz zevkinizi değil, aynı zamanda vücudunuzun ihtiyaçlarını da düşünerek tasarlandı. Derin oturma alanları ve ergonomik form, uzun süreli oturmalarda bile üst düzey konfor sağlıyor. Rahatlığı hissetmek için tek bir dokunuş yeterli.
@@ -154,7 +155,7 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund</span>
+              <span className='font-bold text-4xl max-md:text-2xl'>Dortmund - Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Dortmund koltuk takımımızın siyah renkleri, odanıza sofistike bir hava katarken, aynı zamanda sade ve şık bir görünüm sunuyor. Siyahın zarafeti, modern tasarımıyla buluşarak evinize benzersiz bir stil katıyor.</p>
               <p className='mt-4 text-sm'>
                 Soovhome olarak, tasarımımızda estetiği sadece göz önüne almakla kalmayıp aynı zamanda rahatlık ve ergonomiye de önem veriyoruz. Dortmund koltuk takımı, yüksek kaliteli malzemelerle tasarlanmış olup, uzun süreli oturmalarda bile maksimum konforu sağlamak üzere özel olarak üretilmiştir.
@@ -210,7 +211,7 @@ const Article3 = () => {
             </div>
           </div>}
         </div>
-      </motion.div >
+      </div>
       <Footer />
     </div >
   )

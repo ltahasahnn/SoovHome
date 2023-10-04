@@ -619,7 +619,7 @@ const Article2 = () => {
                 dispatch(count(5))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
-                dispatch(b(8))
+                dispatch(b(7))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
