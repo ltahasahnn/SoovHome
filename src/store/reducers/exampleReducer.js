@@ -77,10 +77,26 @@ const initialState = {
     { id: "assets/images/media/2.jpg" },
     { id: "assets/images/media/5.jpg" },
   ],
+  gloria: [
+    { id: "assets/images/gloria_sofa/1.jpeg" },
+    { id: "assets/images/gloria_sofa/2.jpeg" },
+    { id: "assets/images/gloria_sofa/3.jpeg" },
+    { id: "assets/images/gloria_sofa/4.jpeg" },
+    { id: "assets/images/gloria_sofa/5.jpeg" },
+    { id: "assets/images/gloria_sofa/6.jpeg" },
+    { id: "assets/images/gloria_sofa/7.jpeg" },
+    { id: "assets/images/gloria_sofa/8.jpeg" },
+    { id: "assets/images/gloria_sofa/9.jpeg" },
+    { id: "assets/images/gloria_sofa/10.jpeg" },
+    { id: "assets/images/gloria_sofa/11.jpeg" },
+    { id: "assets/images/gloria_sofa/12.jpeg" },
+    { id: "assets/images/gloria_sofa/13.jpeg" },
+  ],
   countt: 0,
   header: 0,
   countState: null,
   states: null,
+  imagePop: false,
 }
 const userManagament = createSlice({
   name: "userManagament",
@@ -98,8 +114,11 @@ const userManagament = createSlice({
     headers: (state, action) => {
       state.header = action.payload
     },
+    ImagePop: (state, action) => {
+      state.imagePop = !state.imagePop
+    }
   }
 })
 
-export const { count, state, countState, headers } = userManagament.actions;
+export const { count, state, ImagePop, countState, headers } = userManagament.actions;
 export default userManagament.reducer

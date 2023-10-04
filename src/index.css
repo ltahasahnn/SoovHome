@@ -250,7 +250,7 @@ font-family: 'Montserrat', sans-serif;
 .animate{
   transform: .2s;
   transform: rotateZ(0);
-  animation: animation infinite 800ms;
+  animation: animation infinite 500ms;
 }
 @keyframes animation{
   0%{
@@ -309,4 +309,7 @@ font-family: 'Montserrat', sans-serif;
 .grad{
   /* background-image: linear-gradient(to top,#0F2027,#203A43,#2C5364); */
   background: #c1c1c1;
+}
+.z-99{
+  z-index: 999;
 }

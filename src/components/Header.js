@@ -18,7 +18,7 @@ const Header = () => {
               <img
                 src="assets/images/soovlogo.png"
                 alt=""
-                className='h-14 object-cover cursor-pointer border-[#545454] rounded'
+                className='md:h-14 max-md:h-12 object-cover cursor-pointer border-[#545454] rounded'
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ const Header = () => {
               <img
                 src="assets/images/soovlogo.png"
                 alt=""
-                className='h-14 object-cover cursor-pointer border-[#545454] rounded'
+                className='h-14 max-md:h-12 object-cover cursor-pointer border-[#545454] rounded'
               />
             </div>
             <Bars3Icon

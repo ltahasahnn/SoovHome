@@ -4,7 +4,7 @@ const Loading = () => {
   useEffect(() => {
     setTimeout(() => {
       window.location.href = "/home"
-    }, 3000);
+    }, 500);
   }, [])
   return (
     <div className="w-full bg-[#f2f2f2] h-full min-h-[100vh] max-h-[100vh] flex flex-col items-center justify-center">

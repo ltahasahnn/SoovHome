@@ -39,35 +39,35 @@ const Article3 = () => {
           </div>
           {countState === "dort" && <div className="w-full h-full max-lg:col-span-2 flex flex-col justify-between max-md:p-6 max-md:px-2 max-md:border-b max-md:border-[#000] max-md:border-opacity-10 px-10 overflow-hidden">
             {states === 'han/normal' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl'>Wood</span>
+              <span className='font-bold text-4xl'>Wood Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Wood Koltuk Takımı, ismini taşıdığı ahşap dokusuyla evinize doğal bir zarafet getiriyor. Ahşabın sıcak tonları, modern tasarımıyla buluşarak zamanın ötesinde bir estetik sunuyor. Siyah ve krem renklerle bütünleşen ahşap detaylar, odanıza sıcaklık ve karakter katıyor.</p>
               <p className='mt-4 text-sm'>
                 SoovHome'un Wood Koltuk Takımı, sadece göz zevkinizi değil, aynı zamanda vücudunuzun ihtiyaçlarını da düşünerek tasarlandı. Derin oturma alanları ve ergonomik form, uzun süreli oturmalarda bile üst düzey konfor sağlıyor. Rahatlığı hissetmek için tek bir dokunuş yeterli.
               </p>
             </div>}
             {states === 'han/ber' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl'>Wood - Bercel</span>
-              <p className='mt-10 text-sm'>Wood koltuk takımımızın bercel detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir bercel, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
+              <span className='font-bold text-4xl'>Wood - Berjer</span>
+              <p className='mt-10 text-sm'>Wood koltuk takımımızın berjer detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir berjer, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
 
               </p>
               <p className='mt-4 text-sm'>
-                Bercel koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
+                berjer koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl'>Dortmund</span>
+              <span className='font-bold text-4xl'>Dortmund Koltuk Takımı</span>
               <p className='mt-10 text-sm'>Dortmund koltuk takımımızın siyah renkleri, odanıza sofistike bir hava katarken, aynı zamanda sade ve şık bir görünüm sunuyor. Siyahın zarafeti, modern tasarımıyla buluşarak evinize benzersiz bir stil katıyor.</p>
               <p className='mt-4 text-sm'>
                 Soovhome olarak, tasarımımızda estetiği sadece göz önüne almakla kalmayıp aynı zamanda rahatlık ve ergonomiye de önem veriyoruz. Dortmund koltuk takımı, yüksek kaliteli malzemelerle tasarlanmış olup, uzun süreli oturmalarda bile maksimum konforu sağlamak üzere özel olarak üretilmiştir.
               </p>
             </div>}
             {states === 'dort/ber' && <div className="flex max-lg:col-span-2 flex-col w-full">
-              <span className='font-bold text-4xl'>Dortmund - Bercel</span>
-              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berceleridir. Bu berceler, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berceleri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
+              <span className='font-bold text-4xl'>Dortmund - Berjer</span>
+              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berjereridir. Bu berjerer, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berjereri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
 
               </p>
               <p className='mt-4 text-sm'>
-                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berceler ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
+                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berjerer ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
               </p>
             </div>}
             <div className="w-full mt-4 max-lg:col-span-2 flex items-center justify-between">
@@ -90,12 +90,12 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'han/ber' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl'>Wood - Bercel</span>
-              <p className='mt-10 text-sm'>Wood koltuk takımımızın bercel detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir bercel, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
+              <span className='font-bold text-4xl'>Wood - Berjer</span>
+              <p className='mt-10 text-sm'>Wood koltuk takımımızın berjer detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir berjer, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
 
               </p>
               <p className='mt-4 text-sm'>
-                Bercel koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
+                berjer koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex flex-col w-full">
@@ -106,12 +106,12 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'dort/ber' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl'>Dortmund - Bercel</span>
-              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berceleridir. Bu berceler, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berceleri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
+              <span className='font-bold text-4xl'>Dortmund - Berjer</span>
+              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berjereridir. Bu berjerer, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berjereri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
 
               </p>
               <p className='mt-4 text-sm'>
-                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berceler ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
+                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berjerer ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
               </p>
             </div>}
             <div className="w-full mt-4 flex items-center justify-between">
@@ -134,12 +134,12 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'han/ber' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl'>Wood - Bercel</span>
-              <p className='mt-10 text-sm'>Wood koltuk takımımızın bercel detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir bercel, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
+              <span className='font-bold text-4xl'>Wood - berjer</span>
+              <p className='mt-10 text-sm'>Wood koltuk takımımızın berjer detayları, odanıza doğanın sıcaklığını taşıyan bir zarafet sunuyor. Ceviz rengi, odanıza derinlik ve karakter katarak, modern ve klasik unsurları birleştiriyor. Her bir berjer, özenle seçilmiş ceviz tonlarıyla özel bir atmosfer yaratıyor.
 
               </p>
               <p className='mt-4 text-sm'>
-                Bercel koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
+                berjer koltuklarımızda kullanılan keten kumaş, hafif ve doğal dokusuyla rahatlığı zirveye taşıyor. Her oturuş, ketenin yumuşaklığıyla sarılı bir deneyim sunarken, odanıza sade ve sofistike bir hava katıyor. Keten kumaşın nefes alabilir yapısı, uzun saatler boyunca konforlu bir oturuş sağlar.
               </p>
             </div>}
             {states === 'dort/normal' && <div className="flex flex-col w-full">
@@ -150,12 +150,40 @@ const Article3 = () => {
               </p>
             </div>}
             {states === 'dort/ber' && <div className="flex flex-col w-full">
-              <span className='font-bold text-4xl'>Dortmund - Bercel</span>
-              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berceleridir. Bu berceler, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berceleri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
+              <span className='font-bold text-4xl'>Dortmund - berjer</span>
+              <p className='mt-10 text-sm'>Dortmund koltuk takımının öne çıkan özelliklerinden biri, özel olarak tasarlanmış berjereridir. Bu berjerer, sadece rahatlık sunmakla kalmaz, aynı zamanda şıklığı da beraberinde getirir. Dolgun minderleri ve ergonomik yapısıyla, uzun saatler boyunca keyifli bir oturma deneyimi sunar. SoovHome'un berjereri, yaşam alanlarınızda konforun ve zarafetin mükemmel bir birleşimini sağlar.
 
               </p>
               <p className='mt-4 text-sm'>
-                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berceler ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
+                Ev sahibi olmanın keyfini çıkarırken, SoovHome mobilyalarıyla yaşam alanlarınızı özelleştirin. Dortmund koltuk takımı, berjerer ve normal koltuklarımızla konforun ve şıklığın bir araya geldiği eşsiz bir deneyimi sizlere sunuyor. SoovHome ile yaşam alanlarınızı daha özel kılın, konforun tadını çıkarın.
+              </p>
+            </div>}
+            <div className="w-full mt-4 flex items-center justify-between">
+              <Link to="/home" className="max-w-[40px] max-h-[40px] text-sm hover:bg-white hover:text-black cursor-pointer hover:max-h-[42.5px] hover:max-w-[42.5px] rounded-full bg-black text-white flex items-center justify-center p-3">
+                <ChevronLeftIcon className='w-full h-full' />
+              </Link>
+              <div className="w-full flex justify-end items-center">
+                <Link to={`https://wa.me/${whatsappNumber}`}  ><img src="assets/images/whatsapp-logo.png" className='max-w-[46px] max-h-[46px] w-full h-full cursor-pointer' alt="" /></Link>
+                <Link to="https://www.facebook.com/soovhome/"><img src="assets/images/facebook-white.png" className='max-w-[40px] max-h-[40px] mx-6 cursor-pointer' alt="" /></Link>
+                <Link to="https://www.instagram.com/soovhome/"><img src="assets/images/instagram-white.png" className='max-w-[36px] max-h-[36px] w-full h-full cursor-pointer' alt="" /></Link>
+              </div>
+            </div>
+          </div>}
+          {countState === 'gloria' && <div className="w-full h-full max-lg:col-span-2 flex flex-col justify-between max-md:p-6 max-md:px-2 max-md:border-b max-md:border-[#000] max-md:border-opacity-10 px-10 overflow-hidden">
+            {states === 'glo/normal' && <div className="flex flex-col w-full">
+              <span className='font-bold text-4xl'>Gloria - Koltuk Takımı</span>
+              <p className='mt-10 text-sm'>
+                Gloria koltuk takımı, adını haklı çıkararak evinize ihtişam ve konfor getiriyor. Her detayı özenle düşünülmüş olan Gloria, zarafetiyle dikkat çekiyor. Şık tasarımı, odanızı tam anlamıyla bir yaşam alanına dönüştürüyor.</p>
+              <p className='mt-4 text-sm'>
+                Gloria'nın öne çıkan özelliklerinden biri, Bercelli detaylarıdır. Bu detaylar, mobilyalarınıza eşsiz bir dokunuş katarken, kalitenin ve özgünlüğün vurgusunu yapıyor. Ayrıca, Gloria koltuk takımı, rahatlık ve dayanıklılık açısından en yüksek standartlara sahiptir. Uzun günlerin yorgunluğunu atmanızı sağlayacak ergonomik tasarımı, oturma keyfinizi arttırıyor.</p>
+            </div>}
+            {states === 'glo/ber' && <div className="flex flex-col w-full">
+              <span className='font-bold text-4xl'>Gloria - berjer</span>
+              <p className='mt-10 text-sm'>Gloria, sade ve modern tasarımıyla dikkat çekerken, aynı zamanda rahat oturma deneyimi sunan bir koltuk takımıdır. Özel olarak tasarlanmış berceleri, konfora önem verenler için ideal bir seçenek sunar. Dolgun minderleri ve ergonomik yapısıyla, Gloria berceleri, dinlenme ve keyif zamanlarınızın vazgeçilmez parçası olacak.
+
+              </p>
+              <p className='mt-4 text-sm'>
+                SoovHome'un Gloria berjerleri, sadelik ve zarafeti mükemmel bir şekilde bir araya getirir. Evinizin her köşesine zarafet katarak, özel tasarımıyla dikkat çeker. Bu berjerler, sadece oturma alanınıza estetik bir dokunuş katmakla kalmaz, aynı zamanda konforlu bir okuma köşesi veya dinlenme alanı oluşturmanıza da yardımcı olur.
               </p>
             </div>}
             <div className="w-full mt-4 flex items-center justify-between">

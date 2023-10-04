@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid';
 const whatsappNumber = '905376919796';
 const Footer = () => {
   return (
-    <div id="footer" className='bg-[#333333] py-10 leading-8 w-full flex flex-col h-full min-h-[250px] max-lg:px-16 p-4'>
+    <div id="footer" className='bg-[#333333] mt-20 py-10 leading-8 w-full flex flex-col h-full min-h-[250px] max-lg:px-16 p-4'>
       <div className="container m-auto text-white grid grid-cols-5 max-lg:grid-cols-2 gap-8">
         <div className="food-logo max-lg:col-span-2 max-lg:m-auto max-md:col-span-2 max-lg:max-w-[250px]">
           <img src="assets/images/soovlogo.png" className='w-full' alt="" />
