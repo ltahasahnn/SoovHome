@@ -172,8 +172,8 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   padding: 1rem;
   letter-spacing: 1px;
-  font-weight: medium;
-  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
   text-shadow: 0 0 1.5px #fff;
   left: 0;
   bottom: -65px;
@@ -191,6 +191,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .articleWrapper:hover{
   background-color: #FFB000;
+  font-weight: bold;
 }
 
 
@@ -212,6 +213,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .articleMobil:hover{
   background-color: #FFB000;
+  font-weight: bold;
 }
 
 
@@ -235,6 +237,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .infoMobil:hover{
   background-color: #ffae00;
+  font-weight: bold;
 }
 .info{
   padding: 1rem;
@@ -244,7 +247,7 @@ font-family: 'Montserrat', sans-serif;
   justify-content: center;
   letter-spacing: 1px;
   font-weight: medium;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-shadow: 0 0 1.5px #fff;
   color: #fff;
   left: 0;
@@ -261,7 +264,8 @@ font-family: 'Montserrat', sans-serif;
 }
 .info:hover{
   /* background-color: hsla(41, 100%, 50%, 0.815) */
-  background-color: #ffae00
+  background-color: #ffae00;
+  font-weight: bold;
 }
 
 .instagram{

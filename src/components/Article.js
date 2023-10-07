@@ -44,7 +44,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
           <Link to="/urun-detay" className="articleMobil md:hidden p-4 flex h-full flex-col w-full bg-stone-100"
@@ -55,7 +55,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
         </div>
@@ -78,7 +78,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
           <Link to="/urun-detay" className="articleMobil md:hidden p-4 flex h-full flex-col w-full bg-stone-100"
@@ -89,7 +89,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
         </div>
@@ -111,7 +111,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
           <Link to="/urun-detay" className="articleMobil md:hidden p-4 flex h-full flex-col w-full bg-stone-100"
@@ -122,7 +122,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
         </div>
@@ -144,7 +144,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
           <Link to="/urun-detay" className="articleMobil md:hidden p-4 flex h-full flex-col w-full bg-stone-100"
@@ -155,7 +155,7 @@ const Article = () => {
             }}
           >
             <div className="flex gap-10 h-20 items-center overflow-hidden">
-              <span className='font-bold'>URUNU INCELE</span>
+              <span className=''>URUNU INCELE</span>
             </div>
           </Link>
         </div>

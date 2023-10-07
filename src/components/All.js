@@ -68,7 +68,7 @@ const All = () => {
   return (
     <div className='relative select-none'>
       <div className={`imageView fixed max-w-[100%] bg-[rgba(0,0,0,.4)] z-99 min-w-[100%] max-h-[100vh] min-h-[100vh] flex items-center justify-center ${imagePop ? '' : 'hidden'}`}>
-        <div className="relative min-w-[70%] flex max-w-[70%] max-lg:max-h-[200px] max-sm:max-h-[40vh] max-sm:min-h-[40vh] max-md:max-h-[60vh] max-md:min-h-[60vh] max-h-[80vh] min-h-[80vh]">
+        <div className="relative max-w-[70%] flex max-lg:max-h-[200px] max-sm:max-h-[40vh] max-md:max-h-[60vh] max-h-[80vh]">
           <ChevronLeftIcon
             className='arrow-left arrow ts cursor-pointer max-w-[65px] max-h-[65px] p-1 rounded-full max-sm:h-10 max-sm:right-5 h-12'
             onClick={() => {
@@ -77,19 +77,19 @@ const All = () => {
           />
           {countState === "dort" &&
             <img src={dortmund[dortcount[a]].id}
-              className='shadow4 object-cover min-w-[100%] max-w-[100%] max-lg:max-h-[200px] max-sm:min-h-[40vh] max-md:min-h-[60vh] max-md:max-h-[60vh] md:max-h-[80vh] md:max-h-[80%] md:min-h-[80vh]'
+              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-lg:max-h-[200px] max-md:max-h-[60vh] md:max-h-[80vh] md:max-h-[80%]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}
           {countState === "han" &&
             <img src={han[woodcount[a]].id}
-              className='shadow4 object-cover min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-sm:min-h-[40vh] max-md:min-h-[60vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
+              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}
           {countState === "gloria" &&
             <img src={gloria[gloriacount[a]].id}
-              className='shadow4 object-cover min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-sm:min-h-[40vh] max-md:min-h-[60vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
+              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}
