@@ -24,7 +24,7 @@ const Article = () => {
         id='en-cok-satilan'
         className='container gold max-lg:p-4 text-2xl max-w-[1100px] my-4 m-auto w-full grid gap-5 grid-cols-3 max-md:grid-cols-2'
       >
-        <span className='col-span-3 text-center select-none max-lg:text-4xl text-5xl font-bold py-4 text-[#353535] text-opacity-75 modern'>En Çok Satılan</span>
+        <span className='col-span-3 text-center select-none max-lg:text-4xl max-md:text-2xl text-5xl font-bold py-4 text-[#353535] text-opacity-75 modern'>En Çok Satılan</span>
         <div className="h-1 opacity-75 bg-[#353535] col-span-3"></div>
         <div className="w-full max-md:col-span-3 wrapper flex flex-col relative max-h-[320px] bg-stone-100 overflow-hidden rounded shadow">
           <img src={han[16].id} className='h-full object-cover max-h-[350px] cursor-pointer scale-105 hover:scale-100 ts w-full' alt=""
