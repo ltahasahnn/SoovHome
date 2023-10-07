@@ -70,7 +70,7 @@ const All = () => {
       <div className={`imageView fixed max-w-[100%] bg-[rgba(0,0,0,.4)] z-99 min-w-[100%] max-h-[100vh] min-h-[100vh] flex items-center justify-center ${imagePop ? '' : 'hidden'}`}>
         <div className="relative max-w-[70%] flex max-lg:max-h-[200px] max-sm:max-h-[40vh] max-md:max-h-[60vh] max-h-[80vh]">
           <ChevronLeftIcon
-            className='arrow-left max-md:ml-4 arrow ts cursor-pointer max-w-[65px] max-h-[65px] p-1 rounded-full max-sm:h-10 max-sm:right-5 h-12'
+            className='arrow-left max-md:ml-6 arrow ts cursor-pointer max-w-[65px] max-h-[65px] p-1 rounded-full max-sm:h-10 max-sm:right-5 h-12'
             onClick={() => {
               dispatch(minus())
             }}
@@ -98,7 +98,7 @@ const All = () => {
             onClick={() => dispatch(ImagePop())}
           />
           <ChevronRightIcon
-            className='arrow-right max-md:mr-4 arrow ts cursor-pointer max-w-[65px] max-h-[65px] p-1 rounded-full max-sm:h-10 h-12'
+            className='arrow-right max-md:mr-6 arrow ts cursor-pointer max-w-[65px] max-h-[65px] p-1 rounded-full max-sm:h-10 h-12'
             onClick={() => {
               dispatch(plus())
             }}
