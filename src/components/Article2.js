@@ -586,7 +586,7 @@ const Article2 = () => {
                 dispatch(count(10))
                 dispatch(countState("han"))
                 dispatch(state("han/ber"))
-                dispatch(b(5))
+                dispatch(b(9))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
