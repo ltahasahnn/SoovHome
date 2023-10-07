@@ -19,9 +19,7 @@ const App = () => {
         <Route path="/urun-detay" element={<Article3 />} />
         <Route path="/hakkimizda" element={<AboutUs />} />
         <Route path="/iletisim" element={<ContactUs />} />
-        {/* <Route path="/models" element={<Models />} /> */}
       </Routes>
-
     </BrowserRouter>
   )
 }

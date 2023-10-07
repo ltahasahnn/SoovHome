@@ -345,12 +345,12 @@ font-family: 'Montserrat', sans-serif;
   text-align: start;
   transition: .3s;
 }
-.menuBarWrapper li{
+.menuBarWrapper a{
   transition: .3s;
 }
-.menuBarWrapper li{
+.menuBarWrapper a{
   padding: .5rem;
 }
-.menuBarWrapper li:hover{
+.menuBarWrapper a:hover{
   color: #ffae00;
 }

@@ -94,7 +94,7 @@ const Article = () => {
           </Link>
         </div>
         <div className="w-full max-md:col-span-3 wrapper flex flex-col relative max-h-[370px] col-span-2 bg-stone-100 overflow-hidden rounded shadow">
-          <img src={han[0].id} className='h-full object-cover max-h-[350px] cursor-pointer scale-105 hover:scale-100 ts w-full' alt=""
+          <img src={han[0].id} className='h-full object-cover max-h-[300px] cursor-pointer scale-105 hover:scale-100 ts w-full' alt=""
             onClick={() => {
               dispatch(ImagePop())
               dispatch(count(0))
@@ -103,7 +103,7 @@ const Article = () => {
             }}
           />
           <h2 className='p-4 font-bold text-stone-600 text-lg bg-stone-200'>Wood - Koltuk Takımı</h2>
-          <Link to="/urun-detay" className="articleWrapper max-md:hidden p-4 flex h-full flex-col w-full bg-stone-100"
+          <Link to="/urun-detay" className="articleWrapper max-md-:hidden p-4 flex h-full flex-col w-full bg-stone-100"
             onClick={() => {
               dispatch(count(0))
               dispatch(countState("han"))

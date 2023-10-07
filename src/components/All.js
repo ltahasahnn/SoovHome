@@ -23,6 +23,7 @@ const All = () => {
   useEffect(() => {
     document.title = "Soov Home | Anasayfa"
     dispatch(() => headers(0))
+    window.location.href = "#"
   }, [])
 
   useEffect(() => {

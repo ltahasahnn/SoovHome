@@ -16,13 +16,16 @@ const Article3 = () => {
     document.title = "Soov Home | Hakkımızda"
     dispatch(falsee())
     dispatch(headers(2))
+    setTimeout(() => {
+      window.location.href = "#sayfa"
+    }, 250);
   }, [])
   const { images, imagess, count, footer, about } = useSelector((state) => state.userManagament);
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (footer === 0)
-      window.location.href = "#hakkimizda"
+      window.location.href = "#sayfa"
     if (footer === 1)
       window.location.href = "#vizyon"
     if (footer === 2)

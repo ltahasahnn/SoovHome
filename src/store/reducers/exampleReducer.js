@@ -99,7 +99,7 @@ const initialState = {
   imagePop: false,
   gloriacount: [1, 7, 12, 3, 10, 8, 5, 11, 0],
   dortcount: [1, 13, 21, 9, 6, 12, 10, 8, 15, 7, 0],
-  woodcount: [16, 13, 9, 8, 15, 10, 12, 5, 0],
+  woodcount: [16, 13, 2, 8, 15, 9, 12, 5, 0],
   a: 0,
   about: 0,
   modelWrapper: false,

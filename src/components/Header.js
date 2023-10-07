@@ -38,7 +38,9 @@ const Header = () => {
   return (
     <header
       id='sayfa'
-      className='w-full z-50 bg-gradient text-white border-[7D7C7C] border-b'>
+      className='w-full z-50 bg-gradient text-white border-[7D7C7C] border-b'
+      onBlur={() => dispatch(falsee())}
+    >
       <div className="lg:container max-lg:p-4 py-2 m-auto max-lg:flex max-lg:items-start">
         <div className="flex max-lg:hidden max-lg:flex-col w-full lg:p-2 justify-between lg:items-center">
           <div className="flex justify-between lg:items-center">
@@ -64,14 +66,13 @@ const Header = () => {
                 onClick={() => {
                   dispatch(headers(0))
                   dispatch(falsee())
-                  // dispatch(ca(0))
+                  dispatch(ca(0))
                 }}
               >
                 Anasayfa
               </motion.div>
             </Link>
-            <Link
-              to="/"
+            <a
               className='px-2'
             >
               <motion.div
@@ -80,13 +81,15 @@ const Header = () => {
                 onClick={() => {
                   dispatch(headers(1))
                   dispatch(wrapper())
+                  dispatch(ca(0))
                 }}
               >
                 Modeller
                 <ChevronRightIcon className={`h-4 rotate ts ml-2 ${modelWrapper ? 'active' : ''}`} />
               </motion.div>
-              <ul className={`flex menuBarWrapper bg-stone-100 text-stone-600 font-bold flex-col ${modelWrapper ? '' : 'hidden'}`}>
-                <li
+              <ul className={`flex menuBarWrapper bg-[#353535] text-white font-bold flex-col ${modelWrapper ? '' : 'hidden'}`}>
+                <Link
+                  to="/"
                   onClick={() => {
                     dispatch(ca(4))
                     dispatch(wrapper())
@@ -95,8 +98,9 @@ const Header = () => {
                   className=''
                 >
                   Dortmund
-                </li>
-                <li
+                </Link>
+                <Link
+                  to="/"
                   onClick={() => {
                     dispatch(ca(5))
                     dispatch(wrapper())
@@ -105,8 +109,9 @@ const Header = () => {
                   className=''
                 >
                   Gloria
-                </li>
-                <li
+                </Link>
+                <Link
+                  to="/"
                   onClick={() => {
                     dispatch(ca(6))
                     dispatch(wrapper())
@@ -115,16 +120,19 @@ const Header = () => {
                   className=''
                 >
                   Wood
-                </li>
+                </Link>
               </ul>
-            </Link>
+            </a>
             <Link to="/hakkimizda"
               className='px-2'
             >
               <motion.div
 
                 className={`navigation-item item ${header === 2 ? 'active' : ''}`}
-                onClick={() => dispatch(headers(2))}
+                onClick={() => {
+                  dispatch(headers(2))
+                  dispatch(ca(0))
+                }}
               >
                 Hakkımızda
               </motion.div>
@@ -135,7 +143,10 @@ const Header = () => {
               <motion.div
 
                 className={`navigation-item item ${header === 3 ? 'active' : ''}`}
-                onClick={() => dispatch(headers(3))}
+                onClick={() => {
+                  dispatch(headers(3))
+                  dispatch(ca(0))
+                }}
               >
                 Bize Ulaşın
               </motion.div>
@@ -187,6 +198,7 @@ const Header = () => {
                 onClick={() => {
                   dispatch(headers(1))
                   dispatch(wrapper())
+                  dispatch(ca(0))
                 }}
 
               >
@@ -194,7 +206,7 @@ const Header = () => {
                 <ChevronRightIcon className={`h-4 rotate ts ml-2 ${modelWrapper ? 'active' : ''}`} />
               </motion.div>
             </a>
-            <ul className={`flex flex-col ${modelWrapper ? '' : 'hidden'}`}>
+            <ul className={`flex font-bold flex-col ${modelWrapper ? '' : 'hidden'}`}>
               <Link to='/'
                 onClick={() => {
                   dispatch(ca(4))
@@ -232,7 +244,10 @@ const Header = () => {
               <motion.div
 
                 className={`navigation-item item ${header === 2 ? 'active' : ''}`}
-                onClick={() => dispatch(headers(2))}
+                onClick={() => {
+                  dispatch(headers(2))
+                  dispatch(ca(0))
+                }}
               >
                 Hakkımızda
               </motion.div>
@@ -243,7 +258,9 @@ const Header = () => {
               <motion.div
 
                 className={`navigation-item item ${header === 3 ? 'active' : ''}`}
-                onClick={() => dispatch(headers(3))}
+                onClick={() => {
+                  dispatch(headers(3))
+                }}
               >
                 Bize Ulaşın
               </motion.div>
@@ -251,7 +268,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </header>
+    </header >
   )
 }
 

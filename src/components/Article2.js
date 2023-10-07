@@ -417,7 +417,7 @@ const Article2 = () => {
                 dispatch(count(2))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
-                dispatch(b(6))
+                dispatch(b(2))
               }}
               className="w-full model relative max-h-[250px] min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -518,7 +518,7 @@ const Article2 = () => {
                 dispatch(count(12))
                 dispatch(countState("han"))
                 dispatch(state("han/ber"))
-                dispatch(b(7))
+                dispatch(b(6))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
@@ -553,7 +553,7 @@ const Article2 = () => {
                 dispatch(count(9))
                 dispatch(countState("han"))
                 dispatch(state("han/normal"))
-                dispatch(b(2))
+                dispatch(b(5))
               }}
               className="w-full model relative max-h-[500px] min-h-[500px] max-lg:max-h-[250px] max-lg:min-h-[250px] overflow-hidden cursor-pointer"
             >
