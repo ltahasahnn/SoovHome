@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import HeaderContent from '../components/HeaderContent'
 import Article from '../components/Article'
@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import { BrowserRouter, Router, Routes } from 'react-router-dom'
 import { configureStore, createSlice } from '@reduxjs/toolkit'
 import { useDispatch, useSelector } from 'react-redux'
-import { ImagePop, count, countState, falsee, headers, menuBar, minus, plus, wrapper } from '../store/reducers/exampleReducer'
+import { ImagePop, count, countState, falsee, headers, menuBar, minus, plus, wrapper, Bar } from '../store/reducers/exampleReducer'
 import { XMarkIcon, ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline'
 
 const All = () => {
@@ -42,12 +42,20 @@ const All = () => {
       }
     }, 250);
   }, [footer])
-
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
     if (header === 0) {
       dispatch(falsee())
     }
   }, [])
+  const handleScroll = () => {
+    if (window.scrollY > 90) {
+      dispatch(Bar(true))
+    }
+    else {
+      dispatch(Bar(false))
+    }
+  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -77,19 +85,19 @@ const All = () => {
           />
           {countState === "dort" &&
             <img src={dortmund[dortcount[a]].id}
-              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-lg:max-h-[200px] max-md:max-h-[60vh] md:max-h-[80vh] md:max-h-[80%]'
+              className='m-auto object-contain min-w-[100%] max-w-[100%] max-lg:max-h-[200px] max-md:max-h-[60vh] md:max-h-[80vh] md:max-h-[80%]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}
           {countState === "han" &&
             <img src={han[woodcount[a]].id}
-              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
+              className='m-auto object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}
           {countState === "gloria" &&
             <img src={gloria[gloriacount[a]].id}
-              className='shadow4 object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
+              className='m-auto object-contain min-w-[100%] max-w-[100%] max-sm:max-h-[40vh] max-md:max-h-[60vh] md:max-h-[80vh] max-h-[80vh] md:min-h-[80vh]'
               alt=""
               onClick={() => dispatch(ImagePop())}
             />}

@@ -94,6 +94,7 @@ const initialState = {
   ],
   countt: 0,
   header: 0,
+  bar: 0,
   countState: "dort",
   states: "dort/normal",
   imagePop: false,
@@ -131,6 +132,9 @@ const userManagament = createSlice({
     ca: (state, action) => {
       state.footer = action.payload
     },
+    Bar: (state, action) => {
+      state.bar = action.payload
+    },
     plus: (state, action) => {
       if (state.a < 8 || state == 0)
         state.a += +1
@@ -152,5 +156,5 @@ const userManagament = createSlice({
   }
 })
 
-export const { count, state, plus, menuBar, falsee, wrapper, minus, b, ca, ImagePop, countState, headers } = userManagament.actions;
+export const { count, state, plus, Bar, menuBar, falsee, wrapper, minus, b, ca, ImagePop, countState, headers } = userManagament.actions;
 export default userManagament.reducer

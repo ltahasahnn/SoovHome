@@ -46,6 +46,7 @@ const Article3 = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
+        exit={{ opacity: 0 }}
         className="w-full min-h-[90vh] h-full bg-[#f2f2f2] p-10">
         <div className="m-auto p-16 h-full max-md:text-xs container grid grid-cols-2 bg-stone-200 grid h-full h-fit flex p-4">
           <div className="flex h-full flex-col sm:border-r border-[#000] max-sm:col-span-2 border-opacity-25 p-4 overflow-hidden px-10 text-stone-600">

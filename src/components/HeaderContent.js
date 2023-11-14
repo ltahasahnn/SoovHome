@@ -62,6 +62,7 @@ const HeaderContent = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
+        exit={{ opacity: 0 }}
         className="lg:container relative text-black m-auto flex items-center justify-center">
         <ChevronLeftIcon className='h-24 z-50 md:mr-10 hover:text-[#FFB000] text-[#FFCC70] ts cursor-pointer'
           onClick={prevImage}

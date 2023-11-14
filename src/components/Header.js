@@ -6,7 +6,7 @@ import { headers, wrapper, ca, falsee, menuBar } from '../store/reducers/example
 import { motion, wrap } from 'framer-motion';
 
 const Header = () => {
-  const { header, modelWrapper, menu } = useSelector((state) => state.userManagament);
+  const { header, modelWrapper, menu, bar } = useSelector((state) => state.userManagament);
   const dispatch = useDispatch();
 
   const container = {
@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <header
       id='sayfa'
-      className='w-full z-50 bg-gradient text-white border-[7D7C7C] border-b'
+      className={`w-full z-50 bg-gradient text-white border-[7D7C7C] border-b ${bar ? 'barActive' : ''}`}
       onBlur={() => dispatch(falsee())}
     >
       <div className="lg:container max-lg:p-4 py-2 m-auto max-lg:flex max-lg:items-start">
@@ -61,7 +61,6 @@ const Header = () => {
               className='px-2'
             >
               <motion.div
-
                 className={`navigation-item item  ${header === 0 ? 'active' : ''}`}
                 onClick={() => {
                   dispatch(headers(0))

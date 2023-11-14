@@ -358,3 +358,16 @@ font-family: 'Montserrat', sans-serif;
 .menuBarWrapper a:hover{
   color: #ffae00;
 }
+
+.barActive{
+  position: fixed;
+  top: -100px;
+  z-index: 9999;
+  border: 0;
+  animation: bar 1 800ms forwards;
+}
+@keyframes bar{
+  to{
+    top: 0px;
+  }
+}
